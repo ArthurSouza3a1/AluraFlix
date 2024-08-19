@@ -118,7 +118,7 @@
     <script>
         function scrollLeftCustom() {
             const scrollContainer = document.querySelector('.thumbs-div');
-            const scrollAmount = window.innerWidth <= 450 ? -202 : -490; // Valor negativo para rolar à esquerda
+            const scrollAmount = window.innerWidth <= 450 ? -350 : -490; // Valor negativo para rolar à esquerda
 
             console.log("Scroll Left - Current Scroll Position:", scrollContainer.scrollLeft);
             console.log("Scroll Left - Scroll Amount:", scrollAmount);
@@ -133,7 +133,7 @@
 
         function scrollRightCustom() {
             const scrollContainer = document.querySelector('.thumbs-div');
-            const scrollAmount = window.innerWidth <= 450 ? 202 : 490; // Valor positivo para rolar à direita
+            const scrollAmount = window.innerWidth <= 450 ? 350 : 490; // Valor positivo para rolar à direita
 
             console.log("Scroll Right - Current Scroll Position:", scrollContainer.scrollLeft);
             console.log("Scroll Right - Scroll Amount:", scrollAmount);
