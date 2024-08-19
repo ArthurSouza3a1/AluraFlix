@@ -207,20 +207,56 @@ header {
         width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
     }
     
+    .gallery-container {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: 100%; /* Define a largura do container da galeria */
+        position: relative;
+    }
+    
     .thumbs-div {
         display: flex;
-        flex-wrap: nowrap;
         overflow-x: auto;
         scroll-behavior: smooth;
-        width: 100%;
     }
-
     .thumbs {
-        width: 40%; /* Tamanho reduzido das imagens em telas menores */
-        height: 40%;
+        flex: 0 0 auto;
+        margin: 5px;
+        transition: ease 0.3s;
+        z-index: 3;
     }
-
+    .thumbs-active{
+        filter: blur(10);
+        flex: 0 0 auto;
+        margin: 5px;
+        transition: ease 0.3s;
+        z-index: 3;
+    }
+    .thumbs:hover{
+        z-index: 4;
+        size: 130%;
+        transform: translateY(-20px);
+    }
+    
     .nav-btn {
-        padding: 5px; /* Botões menores em telas menores */
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 20;
+        margin: 10px;
+        font-size: 1.5em;
     }
+    
+    .left-btn {
+        left: 0;
+    }
+    
+    .right-btn {
+        right: 0;
+    }
+    
 }
