@@ -96,6 +96,7 @@ header {
     margin: 5px;
     transition: ease 0.3s;
     z-index: 3;
+    border: solid 3px #ffd000;
 }
 .thumbs:hover {
     z-index: 4;

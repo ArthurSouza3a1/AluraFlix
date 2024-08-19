@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AluraFlix</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h2 class="title">Alura</h2>
+            <h2 class="title1">Flix</h2>
+        </div>
+    </header>
+    <section class="center">
+        <div class="box">
+            <div class="title-box">
+                <h2 class="source-title">Alanzoka jogando Zelda: Tears of the Kingdom - Parte #1</h2>
+            </div>
+            <!-- 
+         <div class="title-box">
+            <h2 class="source-title">Video qualquer que eu achei no meu computador</h2>
+        </div>
+        <div class="div-vid">
+                <video controls poster="src/aa.jpeg" width="600px">
+                <source src="src/aa.mp4" type="video/mp4">
+                Seu navegador não oferece suporte ao elemento de vídeo.
+            </video>
+        </div> -->
+            <div class="video-buxa">
+                <iframe  class="video" width="640" height="360" src="https://www.youtube.com/embed/MTd_Nf2AzTk?list=PLrVhyUnEQMV9lwiwZGHSc_QbcPeLhzM4i" title="alanzoka jogando Zelda: Tears of the Kingdom - Parte #1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="pre-footer">
+        <div class="gallery-container">
+            <button class="nav-btn left-btn" onclick="scrollLeftCustom()">◀</button>
+            <div class="thumbs-div">
+
+                <img class="thumbs"
+                data-url="index.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/MTd_Nf2AzTk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg=&amp;rs=AOn4CLBpd6rpyVZDeGgbVMZ3oItRzV9ziQ">
+                <img class="thumbs"
+                data-url="index2.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/lpheaVl1nt8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLCa4P-fN5Q0b920xjEn943j13anNg">
+                <img class="thumbs"
+                data-url="index3.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/ZTWxU_ocMe4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBHyIq4dh_mlaqGO8yoVsnUt0FNjw">
+                <img class="thumbs"
+                data-url="index4.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/_L3gTUlZcEE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBu7lBinusA5PbARBTzo1j_J74dRQ">
+                <img class="thumbs-active"
+                    src="https://i.ytimg.com/vi/z3ysLOtiG5Q/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBNImwOesgAhWY-M4UoBowYMZvgfQ">
+                <img class="thumbs"
+                data-url="index6.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/5AlyyAdCgH8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBoIQve1meCgJW76SJTDpeGirrRjA">
+                <img class="thumbs"
+                data-url="index7.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/jP6q4U8RKeo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLCeBwDEY6Kr-VvBzQpcppxhdFeRbg">
+                <img class="thumbs"
+                data-url="index8.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/wfdw50AaLVM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAPr91fwm7s4N4ZWfKeZkdIVJuiMQ">
+                <img class="thumbs"
+                data-url="index9.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/1MeTbmHx4yU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLCU1av6lk3AFUW_2yj9QH67xBJbpg">
+                <img class="thumbs"
+                data-url="index10.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/5-K73Qg97mc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLDeZ3r5cyaPTqD9xDj5KgH9jhJyTQ">]
+                <img class="thumbs"
+                data-url="index11.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/WFnrUuAJkHY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLB5Ro1sTatyqoJQ8k2IG2FiBDqr0A">
+                <img class="thumbs"
+                data-url="index12.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/O_SrCibHvVg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLDmJ-AAqhKTLZomQLOkWgL96kEFOw">
+                <img class="thumbs"
+                data-url="index13.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/CtFWI3RQtNo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLDY0xtP5B_XczKYcR131eF2bk6-Bw">
+                <img class="thumbs"
+                data-url="index14.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/vJ6HXcf-yxY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLDqIUn1tySN8agBsaLftJsTWSutlA">
+                <img class="thumbs"
+                data-url="index15.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/w8A4y3xPWS0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLDD-o_H6hHjolJJdqz_y3JcgQItlw">
+                <img class="thumbs"
+                data-url="index16.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/qVA7li9e8DY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBDDhwZ_ThumUyVAUYxizWhb2FNSA">
+                <img class="thumbs"
+                data-url="index17.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/NqFlrt6jXMI/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLATfC53DWOOzdd6q8zuhP3SBOjbew">
+                <img class="thumbs"
+                data-url="index18.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/CTinrmzZ5Ws/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAK1ZRRzWLTvz1PmQYazzjrFlhzCQ">
+                <img class="thumbs"
+                data-url="index19.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/Fp6tIyB7whM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLCs8ypmLHmw1FtRqV3DEuOMpV-njw">
+                <img class="thumbs"
+                data-url="index20.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/8iRfeGq3IgA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLDBiH2m8bfaJfmTnfdLHiJ8jGx1pg">
+                <img class="thumbs"
+                data-url="index21.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/R4X6MwDg95w/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAiWPMGqoaltv0dEpjw-HAHP9xLtw">
+                <img class="thumbs"
+                data-url="index22.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/vsPh2IQfWu4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBhKGzijDRh5U7zmNjPUvz1ajVqwQ">
+                <img class="thumbs"
+                data-url="index23.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/TRNBsL6CIPQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAGJ11QkPV_q0nOrmPIf0jRjbpOzA">
+                <img class="thumbs"
+                data-url="index24.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/n6nvKOffUy0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLCZ3ffmGK2fnpgAXkuYzLeLt0dDKw">
+                <img class="thumbs"
+                data-url="index25.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/S5FnUoFc-kA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAlIDiYlvkTlmPJ8UkouUuPVkIHrg">
+                <img class="thumbs"
+                data-url="index26.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/orxgz48Mq_k/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBDSBao-_jZHzQWI08expVpbaRKAA">
+                <img class="thumbs"
+                data-url="index27.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/Vf1cg2Usu7w/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAY3I8y63TCW8AxysPsdqRqgzhD6g">
+                <img class="thumbs"
+                data-url="index28.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/s1626dzQydU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLD_C25dIP4XTmIyg1lN3ldfV7xd4g">
+                <img class="thumbs"
+                data-url="index29.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/Q4NuIx4yL-Q/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBc0h5RDT8qap_MdY7TiZkIPQOemg">
+                <img class="thumbs"
+                data-url="index30.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/Avj9IxoJ5eg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLC0yaw0WYsYuI8inEm0n9YhXMDK_Q">
+                <img class="thumbs"
+                data-url="index31.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/krCimaYUDw4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLB6h3E_nM2aAc8xydeC1qfdOlkpoQ">
+                <img class="thumbs"
+                data-url="index32.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/dKYFm9lcj5E/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLBdQ7xB8YZakA-rMguFVpS3tqgmPQ">
+                <img class="thumbs"
+                data-url="index33.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/KrtJ3WhwKmY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLCC92uJDWzemek5jY9ChJyLAv6bxw">
+                <img class="thumbs"
+                data-url="index34.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/0EAcMnCzn2M/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAz7jm3FyUBo7q1zVDNoeKY9s4mow">
+                <img class="thumbs"
+                data-url="index35.html"
+     onclick="redirectToPage(this)"
+                    src="https://i.ytimg.com/vi/h62Hw6Dgk8k/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG=&amp;rs=AOn4CLAFUsDbWCeYjeEu7fa_vZVYW9vQMA">
+
+            </div>
+            <button class="nav-btn right-btn" onclick="scrollRightCustom()">▶</button>
+        </div>
+    </section>
+    <script>
+        function scrollLeftCustom() {
+            const scrollContainer = document.querySelector('.thumbs-div');
+            const scrollAmount = window.innerWidth <= 450 ? -350 : -490; // Valor negativo para rolar à esquerda
+
+            console.log("Scroll Left - Current Scroll Position:", scrollContainer.scrollLeft);
+            console.log("Scroll Left - Scroll Amount:", scrollAmount);
+
+            scrollContainer.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+
+            console.log("Scroll Left - New Scroll Position:", scrollContainer.scrollLeft);
+        }
+
+        function scrollRightCustom() {
+            const scrollContainer = document.querySelector('.thumbs-div');
+            const scrollAmount = window.innerWidth <= 450 ? 350 : 490; // Valor positivo para rolar à direita
+
+            console.log("Scroll Right - Current Scroll Position:", scrollContainer.scrollLeft);
+            console.log("Scroll Right - Scroll Amount:", scrollAmount);
+
+            scrollContainer.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+
+            console.log("Scroll Right - New Scroll Position:", scrollContainer.scrollLeft);
+        }
+        document.querySelectorAll('.thumb-img').forEach(function (img) {
+            let tapped = false;
+
+            img.addEventListener('click', function (event) {
+                if (!tapped) {
+                    tapped = true;
+                    img.classList.add('hover');
+                    setTimeout(function () { tapped = false; }, 1500); // Redefine o estado de toque após 300ms
+                } else {
+                    window.location.href = img.getAttribute('data-link'); // Redireciona para a URL armazenada no atributo data-link
+                }
+                event.preventDefault(); // Impede o comportamento padrão
+            });
+        });
+        function redirectToPage(imgElement) {
+        const url = imgElement.getAttribute('data-url');
+        if (url) {
+            window.location.href = url;
+        }
+    }
+    </script>
+
+</body>
+
+</html>
