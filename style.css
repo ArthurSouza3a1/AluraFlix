@@ -40,7 +40,7 @@ header {
     height: 90vh;
     overflow: hidden;
     background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.229) 0%, rgba(0, 0, 0, 0.645) 50%, rgb(0, 0, 0) 100%),
+        linear-gradient(to bottom, rgba(105, 0, 111, 0) 0%, rgba(105, 0, 111, 0.46) 50%, rgb(106, 0, 111) 100%),
         url(src/background.png);
     background-size: cover;
     background-position: center;
@@ -65,7 +65,7 @@ header {
     width: 100%;
     height: 30vh;
     background:
-        linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.714) 50%, rgba(0, 0, 0, 0.358) 100%);
+        linear-gradient(to bottom, rgb(105, 0, 111) 0%, rgba(105, 0, 111, 0.46) 50%, rgba(105, 0, 111, 0) 100%);
     z-index: 1;
     transform: translateY(-1px);
 }
@@ -88,6 +88,7 @@ header {
     margin: 5px;
     transition: ease 0.3s;
     z-index: 3;
+    object-fit: cover; /* Isso vai cortar a imagem para preencher o contêiner */
 }
 .thumbs-active{
     filter: blur(10);
@@ -96,10 +97,10 @@ header {
     transition: ease 0.3s;
     z-index: 3;
 }
-.thumbs:hover{
+.thumbs:hover {
     z-index: 4;
-    size: 130%;
-    transform: translateY(-20px);
+    transform: scale(1.05);
+    box-shadow: 0 15px 20px rgb(219, 40, 255); /* Sombra branca com opacidade */
 }
 
 .nav-btn {
@@ -165,8 +166,8 @@ header {
         height: 90vh;
         overflow: hidden;
         background:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.229) 0%, rgba(0, 0, 0, 0.645) 50%, rgb(0, 0, 0) 100%),
-            url(src/background.png);
+        linear-gradient(to bottom, rgba(105, 0, 111, 0) 0%, rgba(105, 0, 111, 0.46) 50%, rgb(106, 0, 111) 100%),
+        url(src/background.png);
         background-size: cover;
         background-position: center;
     }
@@ -193,11 +194,10 @@ header {
     }
 
     .pre-footer {
-        height: 30vh;
         background:
-            linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.714) 50%, rgba(0, 0, 0, 0.358) 100%);
-        z-index: 1;
-        transform: translateY(-1px);
+        linear-gradient(to bottom, rgb(105, 0, 111) 0%, rgba(105, 0, 111, 0.46) 50%, rgba(105, 0, 111, 0) 100%);
+    z-index: 1;
+    transform: translateY(-1px);
     }
 
     .pre-footer {
@@ -225,6 +225,8 @@ header {
         margin: 5px;
         transition: ease 0.3s;
         z-index: 3;
+        width: 60%;
+        height: 60%;
     }
     .thumbs-active{
         filter: blur(10);
@@ -232,6 +234,8 @@ header {
         margin: 5px;
         transition: ease 0.3s;
         z-index: 3;
+        width: 60%;
+        height: 60%;
     }
     .thumbs:hover{
         z-index: 4;
