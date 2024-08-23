@@ -8,7 +8,277 @@
     <script src="script.js"></script>
     <title>AluraFlix</title>
 </head>
+<!-- <style>
+    * {
+font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+margin: 0;
+}
+
+header {
+background-color: #535353;
+}
+
+.header-content {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size: 2em;
+}
+
+.title1 {
+margin: 0;
+color: rgb(191, 123, 255);
+}
+
+.title {
+margin: 0;
+color: #fff
+}
+
+/* CENTER */
+
+.center {
+position: relative;
+justify-content: right;
+align-items: center;
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 90vh;
+overflow: hidden;
+background:
+    linear-gradient(to bottom, rgba(105, 0, 111, 0) 0%, rgba(105, 0, 111, 0.46) 50%, rgb(106, 0, 111) 100%),
+    url(src/background.png);
+background-size: cover;
+background-position: center;
+}
+
+.video-buxa {
+margin: 10px;
+}
+
+.box {
+backdrop-filter: blur(10px);
+background-color: rgba(255, 255, 255, 0.637);
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+border: solid 5px #fff;
+}
+
+.pre-footer {
+width: 100%;
+height: 30vh;
+background:
+    linear-gradient(to bottom, rgb(105, 0, 111) 0%, rgba(105, 0, 111, 0.46) 50%, rgba(105, 0, 111, 0) 100%);
+z-index: 1;
+transform: translateY(-1px);
+}
+
+.gallery-container {
+display: flex;
+align-items: center;
+overflow: hidden;
+width: 100%; /* Define a largura do container da galeria */
+position: relative;
+}
+
+.thumbs-div {
+display: flex;
+overflow-x: auto;
+scroll-behavior: smooth;
+}
+.thumbs {
+flex: 0 0 auto;
+margin: 5px;
+transition: ease 0.3s;
+z-index: 3;
+object-fit: cover; /* Isso vai cortar a imagem para preencher o contêiner */
+}
+.thumbs-active{
+filter: blur(10);
+flex: 0 0 auto;
+margin: 5px;
+transition: ease 0.3s;
+z-index: 3;
+border: solid 3px #ffd000;
+}
+.thumbs:hover {
+z-index: 4;
+transform: scale(1.05);
+box-shadow: 0 15px 20px rgb(219, 40, 255); /* Sombra branca com opacidade */
+}
+
+.nav-btn {
+background-color: rgba(0, 0, 0, 0.2);
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+position: absolute;
+z-index: 20;
+margin: 10px;
+font-size: 1.5em;
+}
+
+.left-btn {
+left: 0;
+}
+
+.right-btn {
+right: 0;
+}
+
+@media(max-width: 450px) {
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #535353;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.title1 {
+    margin: 0;
+    color: rgb(191, 123, 255);
+}
+
+.title {
+    margin: 0;
+    color: #fff
+}
+
+/* CENTER */
+
+.center {
+    position: relative;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background:
+    linear-gradient(to bottom, rgba(105, 0, 111, 0) 0%, rgba(105, 0, 111, 0.46) 50%, rgb(106, 0, 111) 100%),
+    url(src/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-buxa {
+    margin: 10px;
+}
+
+.video {
+    width: 360px;
+    height: 190px;
+}
+
+.box {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.637);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 5px #fff;
+    font-size: 1em;
+}
+
+.pre-footer {
+    background:
+    linear-gradient(to bottom, rgb(105, 0, 111) 0%, rgba(105, 0, 111, 0.46) 50%, rgba(105, 0, 111, 0) 100%);
+z-index: 1;
+transform: translateY(-1px);
+}
+
+.pre-footer {
+    overflow-x: auto; /* Permite o scroll horizontal */
+    white-space: nowrap; /* Mantém os itens em uma linha */
+    padding: 10px 0; /* Espaçamento superior e inferior */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%; /* Define a largura do container da galeria */
+    position: relative;
+}
+
+.thumbs-div {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.thumbs {
+    flex: 0 0 auto;
+    margin: 5px;
+    transition: ease 0.3s;
+    z-index: 3;
+    width: 40%;
+    height: 40%;
+}
+.thumbs-active{
+    filter: blur(10);
+    flex: 0 0 auto;
+    margin: 5px;
+    transition: ease 0.3s;
+    z-index: 3;
+    width: 40%;
+    height: 40%;
+}
+.thumbs:hover{
+    z-index: 4;
+    size: 130%;
+    transform: translateY(-20px);
+}
+
+.nav-btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+
+}
+
+
+</style> -->
 <body>
     <header>
         <div class="header-content">
@@ -36,6 +306,7 @@
             </div>
         </div>
     </section>
+
     <section class="pre-footer">
         <div class="gallery-container">
             <button class="nav-btn left-btn" onclick="scrollLeftCustom()">◀</button>
